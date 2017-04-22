@@ -1,4 +1,7 @@
-# test coverage for  [cordova-plugin-secure-storage (v2.6.5)](https://github.com/crypho/cordova-plugin-secure-storage#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-cordova-plugin-secure-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-cordova-plugin-secure-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-cordova-plugin-secure-storage.svg)](https://travis-ci.org/npmtest/node-npmtest-cordova-plugin-secure-storage)
+# npmtest-cordova-plugin-secure-storage
+
+#### basic test-coverage for  [cordova-plugin-secure-storage (v2.6.5)](https://github.com/crypho/cordova-plugin-secure-storage#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-cordova-plugin-secure-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-cordova-plugin-secure-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-cordova-plugin-secure-storage.svg)](https://travis-ci.org/npmtest/node-npmtest-cordova-plugin-secure-storage)
+
 #### Secure storage plugin for iOS & Android
 
 [![NPM](https://nodei.co/npm/cordova-plugin-secure-storage.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/cordova-plugin-secure-storage)
@@ -32,12 +35,10 @@
 ```json
 
 {
-    "author": {
-        "name": "Yiorgis Gozadinos"
-    },
-    "bugs": {
-        "url": "https://github.com/crypho/cordova-plugin-secure-storage/issues"
-    },
+    "name": "cordova-plugin-secure-storage",
+    "version": "2.6.5",
+    "description": "Secure storage plugin for iOS & Android",
+    "author": "Yiorgis Gozadinos <ggozad@crypho.com>",
     "contributors": [
         {
             "name": "Demetris Manikas"
@@ -55,19 +56,6 @@
             "windows"
         ]
     },
-    "dependencies": {},
-    "description": "Secure storage plugin for iOS & Android",
-    "devDependencies": {
-        "cordova-plugin-test-framework": ">=1.0.0",
-        "eslint": ""
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "168557b5c46495541be04d5a3e2ac62770f838d7",
-        "tarball": "https://registry.npmjs.org/cordova-plugin-secure-storage/-/cordova-plugin-secure-storage-2.6.5.tgz"
-    },
-    "gitHead": "4a574eeccbd02ab0448e5856dbaf8b891d07d43c",
-    "homepage": "https://github.com/crypho/cordova-plugin-secure-storage#readme",
     "keywords": [
         "cordova",
         "security",
@@ -80,23 +68,24 @@
         "cordova-windows",
         "cordova-browser"
     ],
-    "license": "MIT",
     "main": "www/securestorage.js",
-    "maintainers": [
-        {
-            "name": "ggozad"
-        }
-    ],
-    "name": "cordova-plugin-secure-storage",
-    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/crypho/cordova-plugin-secure-storage.git"
     },
     "scripts": {
-        "eslint": "eslint www/securestorage.js tests/tests.js"
+        "eslint": "./node_modules/.bin/eslint www/securestorage.js tests/tests.js"
     },
-    "version": "2.6.5"
+    "devDependencies": {
+        "cordova-plugin-test-framework": ">=1.0.0",
+        "eslint": ""
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/crypho/cordova-plugin-secure-storage/issues"
+    },
+    "homepage": "https://github.com/crypho/cordova-plugin-secure-storage#readme",
+    "bin": {}
 }
 ```
 
